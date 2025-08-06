@@ -1,16 +1,18 @@
 import React from 'react'
 import HeroSection from './HeroSection';
-import Team from './Team';
+import LeftImage from './LeftImage';
+import RightImage from './RigthImage';
 import Footer from '../Footer';
 
-function AboutPage() {
+function ProductPage() {
     return ( 
         <>
             <HeroSection />
-            <Team />
+            <LeftImage />
+            <RightImage />
             <Footer />
         </>
      );
 }
 
-export default AboutPage;
+export default ProductPage;
