@@ -9,33 +9,36 @@ function Pricing() {
                     <p>We pioneered the concept of discount broking and price transparency in India. Flat fees and no hidden charges.</p>
                     <a className='m-3' href="/pricing" style={{textDecoration:'none', color:"#387ed1"}}>See pricing<i class="fa-solid fa-arrow-right"></i></a>
                 </div>
-                {/* images div */}
+                {/* images div start */}
                 <div className='col-lg-6 flex flex-col'>
-                    <div className='col-lg-2 col-md-3' style={{width:'150px', height:'150px'}}>
-                    <img 
-                    src='/assets/pricing0.svg' 
-                    alt='princing0'
-                    style={{width: "100px", height:"100px"}}
-                    ></img>
-                    <p>Free account opening</p>
+                    <div className='row'>
+                        <div className='col-lg-2 col-md-3' style={{width:'150px', height:'150px'}}>
+                            <img 
+                            src='/assets/pricing0.svg' 
+                            alt='princing0'
+                            style={{width: "100px", height:"100px"}}
+                            ></img>
+                            <p>Free account opening</p>
+                        </div>
+                        <div className='col-lg-4 col-md-3'>
+                            <img 
+                            src='/assets/pricing0.svg' 
+                            alt='pricing0'
+                            style={{width: "100px", height:"100px"}}
+                            ></img>
+                            <p>Free Equity delivery and direct mutual funds</p>
+                        </div>
+                        <div className='col-lg-2 col-md-3 text-center'>
+                            <img 
+                            src='/assets/pricing20.svg' 
+                            alt='pricing20'
+                            style={{width: "100px", height:"100px"}}
+                            ></img>
+                            <p>IntraDay and F&O</p>
+                        </div>
+                    </div>
                 </div>
-                <div className='col-lg-2 col-md-3'>
-                    <img 
-                    src='/assets/pricing0.svg' 
-                    alt='pricing0'
-                    style={{width: "100px", height:"100px"}}
-                    ></img>
-                    <p>Free Equity delivery and direct mutual funds</p>
-                </div>
-                <div className='col-lg-2 col-md-3'>
-                    <img 
-                    src='/assets/pricing20.svg' 
-                    alt='pricing20'
-                    style={{width: "100px", height:"100px"}}
-                    ></img>
-                    <p>IntraDay and F&O</p>
-                </div>
-                </div>
+                {/*Images div end */}
             </div>
         </div>
      );

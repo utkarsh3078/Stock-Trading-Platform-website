@@ -19,7 +19,8 @@ function HeroSection() {
                     />
                     <h1 className='pt-3'>Invest in everything</h1>
                     <p>Online platform to invest in stocks, derivates, mutual funds, ETFs, bonds, and more.</p>
-                    <button className='btn btn-primary' style={{backgroundColor:"#387ed1", width:"20%", color:"white", padding:"10px", fontWeight:"bold"}}>Sign up for free</button>
+                    <button className='btn btn-primary' style={{width:"20%", color:"white", padding:"10px", fontWeight:"bold"}}>Sign up for free</button>
+                    {/* backgroundColor:"#387ed1" */}
                 </div>
             </div>
         </div>

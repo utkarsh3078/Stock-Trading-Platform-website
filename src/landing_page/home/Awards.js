@@ -24,8 +24,8 @@ function Awards() {
                     src='/assets/ecosystem.png' 
                     alt='ecosystem'
                     style={{
-                        width: '550px',
-                        height: '550px'
+                        width: '100%',
+                        height: 'auto'
                     }}
                     ></img>
                     <p className='text-center'>
