@@ -3,6 +3,7 @@ import HeroSection from './HeroSection';
 import LeftImage from './LeftImage';
 import RightImage from './RigthImage';
 import Footer from '../Footer';
+import Navbar from '../Navbar';
 
 function ProductPage() {
     return ( 
@@ -10,7 +11,6 @@ function ProductPage() {
             <HeroSection />
             <LeftImage />
             <RightImage />
-            <Footer />
         </>
      );
 }

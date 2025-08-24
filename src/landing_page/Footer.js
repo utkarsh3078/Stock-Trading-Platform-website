@@ -2,20 +2,28 @@ import React from 'react'
 
 function Footer() {
     return ( 
-        <footer style={{backgroundColor:'rgb(240,240,240)'}}>
+        <footer style={{backgroundColor:'rgb(250,250,250)'}}>
         <div className='container mt-4 pt-3 border-top'>
             <div className='row mt-4 pt-3'>
                 <div className='col-3'>
                     <div className='footer-logo'>
                         <img src='/assets/logo.svg' alt='logo' style={{width:'50%'}}></img>
                     </div>
-                    <p className='mt-3'>© 2010 - 2025, Zerodha Broking Ltd.</p>
-                    <p>All rights reserved</p>
-                    <ul>
-                        <li>
-                            {/* images of socoial media platforms */}
-                        </li>
+                    <p className='mt-3' style={{fontSize:'12px'}}>© 2010 - 2025, Zerodha Broking Ltd.</p>
+                    <p style={{fontSize:'12px'}}>All rights reserved</p>
+                    <ul className='pl-1' style={{opacity:'0.6'}}>
+                        <li  style={{display:"inline-block", marginRight:"21px"}}><a href='#' style={{color:'black'}}><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li  style={{display:"inline-block", marginRight:"21px"}}><a href='#' style={{color:'black'}}><i class="fa-brands fa-square-facebook"></i></a></li>
+                        <li style={{display:"inline-block", marginRight:"21px"}}><a href='#' style={{color:'black'}}><i class="fa-brands fa-instagram"></i></a></li>
+                        <li style={{display:"inline-block", marginRight:"21px"}}><a href='#' style={{color:'black'}}><i class="fa-brands fa-linkedin-in"></i></a></li>
                     </ul>
+                    <div className='border-top' >
+                        <ul className='mt-3' style={{opacity:'0.6'}}>
+                            <li  style={{display:"inline-block", marginRight:"21px"}}><a href='#' style={{color:'black'}}><i class="fa-brands fa-youtube"></i></a></li>
+                            <li  style={{display:"inline-block", marginRight:"21px"}}><a href='#' style={{color:'black'}}><i class="fa-brands fa-telegram"></i></a></li>
+                            <li style={{display:"inline-block", marginRight:"21px"}}><a href='#' style={{color:'black'}}><i class="fa-brands fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div className='col-9'>
                     <div className='row'>
