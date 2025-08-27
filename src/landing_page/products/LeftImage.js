@@ -61,7 +61,7 @@ function LeftImage({
               href={googlePlay}
               style={{ marginRight: "36px" }}
             >
-              <img src="./assets/googleplayBadge.svg" />
+              <img src="./assets/googlePlayBadge.svg" />
             </a>
             <a target="_blank" href={appStore}>
               <img src="./assets/appstoreBadge.svg" />
