@@ -16,6 +16,7 @@ function RightImage({
           <p>{productDescription}</p>
           <a
             target="_blank"
+            rel="noreferrer"
             href={link}
             style={{
               textDecoration: "none",
