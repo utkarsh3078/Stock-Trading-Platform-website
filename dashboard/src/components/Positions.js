@@ -7,7 +7,7 @@ const Positions = () => {
   useEffect(() => {
     axios
       .get(
-        "https://stock-trading-platform-website-back.vercel.app/allPositions"
+        "https://stock-trading-platform-website-backend.onrender.com/allPositions"
       )
       .then((res) => {
         console.log(res.data); //Just to see if the data is comming or not

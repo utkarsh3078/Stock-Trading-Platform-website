@@ -7,7 +7,9 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
   useEffect(() => {
     axios
-      .get("https://stock-trading-platform-website-back.vercel.app/allHoldings")
+      .get(
+        "https://stock-trading-platform-website-backend.onrender.com/allHoldings"
+      )
       .then((res) => {
         console.log(res.data); //Just to see if the data is comming or not
         setAllHoldings(res.data);
