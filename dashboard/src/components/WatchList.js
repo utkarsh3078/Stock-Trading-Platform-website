@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-
+import React, { useContext, useState } from "react";
+import GeneralContext from "./GeneralContext";
 import { Tooltip, Grow } from "@mui/material";
 import {
   BarChartOutlined,
@@ -67,6 +67,12 @@ const WatchListItem = ({ stock }) => {
 };
 
 const WatchListActions = ({ uid }) => {
+  //for opening buying window
+  const generalContext = useContext(GeneralContext);
+  const handleBuyClick = () => {
+    generalContext.openBuyWindow(uid);
+  };
+
   return (
     <span className="actions">
       <span>
@@ -75,6 +81,7 @@ const WatchListActions = ({ uid }) => {
           placement="top"
           arrow
           TransitionComponent={Grow}
+          onClick={handleBuyClick}
         >
           {/* arrow is a true or false value, if true it adds arrow */}
           {/* Grow will give effect of hower on the button */}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import BuyActionWindow from "./BuyActionWindow";
 
+//uid is used here to check on whick stock we have clicked
 const GeneralContext = React.createContext({
   openBuyWindow: (uid) => {},
   closeBuyWindow: () => {},
