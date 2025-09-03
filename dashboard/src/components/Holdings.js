@@ -6,10 +6,12 @@ import { VerticalGraph } from "./VerticalGraph";
 const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:8080/allHoldings").then((res) => {
-      console.log(res.data); //Just to see if the data is comming or not
-      setAllHoldings(res.data);
-    });
+    axios
+      .get("https://stock-trading-platform-website-back.vercel.app/allHoldings")
+      .then((res) => {
+        console.log(res.data); //Just to see if the data is comming or not
+        setAllHoldings(res.data);
+      });
   }, []);
 
   const labels = allHoldings.map((subArray) => subArray["name"]);

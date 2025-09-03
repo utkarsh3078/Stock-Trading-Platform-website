@@ -5,10 +5,14 @@ import axios from "axios";
 const Positions = () => {
   const [allPositions, setAllPositions] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:8080/allPositions").then((res) => {
-      console.log(res.data); //Just to see if the data is comming or not
-      setAllPositions(res.data);
-    });
+    axios
+      .get(
+        "https://stock-trading-platform-website-back.vercel.app/allPositions"
+      )
+      .then((res) => {
+        console.log(res.data); //Just to see if the data is comming or not
+        setAllPositions(res.data);
+      });
   }, []);
 
   return (
